@@ -1,0 +1,28 @@
+﻿	<div style="margin: 0pt; padding: 0pt; background-color: rgb(227, 227, 219); font-size: 11px; font-family: Verdana,Arial,Helvetica,sans-serif; color: rgb(0, 0, 0);">
+		<div style="border-bottom: 3px solid rgb(0, 0, 0); padding: 14px; background-color: rgb(188, 224, 238);">
+			<img src="http://www.otaku-studios.com/images/logo.png" alt="Otaku Studios"></div>
+		<div style="padding: 14px 14px 50px; background-color: rgb(227, 227, 219);">
+			<div style="border: 1px solid rgb(204, 204, 204); padding: 14px; background-color: rgb(255, 255, 255);">
+				<cfif server_used is "Otaku8" or server_used is "Otaku9">
+					<cfoutput query="UserDetails">
+						<img src="http://www.habbo.co.uk/habbo-imaging/avatarimage?figure=#app#&size=b&direction=2&head_direction=2" style="float: left">
+						<h1 style="font-size: 16px;">#name#</h1>
+						<p>#mission#</p>
+					</cfoutput>
+				<cfelseif server_used is "Holo" or server_used is "Phoenix">
+					<cfoutput query="UserDetails">
+						<img src="http://www.habbo.co.uk/habbo-imaging/avatarimage?figure=#figure#&size=b&direction=2&head_direction=2" style="float: left">
+						<h1 style="font-size: 16px;">#name#</h1>
+						<p>#mission#</p>
+					</cfoutput>
+				</cfif>
+				<p style="font-size: 13px;">
+				<p>This is an automatic message from Habbo. To turn off the 
+				notification, update your Account Settings.</p>
+			</div>
+			<div style="padding: 14px 0pt; text-align: center; font-size: 10px;">
+				Copyright © 2006 - 2008 Otaku Studios<br>
+				Powered by OtakuCMS™ Version 3.2<br>
+			</div>
+		</div>
+	</div>
