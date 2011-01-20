@@ -1,0 +1,1 @@
+﻿<cfset iniFile = expandPath("/config.ini")><cfset DSN = getProfileString(iniFile, "coldfusion", "DSN")><cfquery name = "NameCheck" datasource = "#DSN#">SELECT mail FROM users WHERE mail = '#url.mail#' LIMIT 1</cfquery><cfif NameCheck.recordcount>0<cfelse>1</cfif>
