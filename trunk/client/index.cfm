@@ -50,23 +50,23 @@
 </cfoutput>
 
 <link rel="alternate" type="application/rss+xml" title="Habbo Hotel - RSS" href="http://www.habbo.com/articles/rss.xml" /> 
-<script src="http://images.habbo.com/habboweb/61_c0f99b7b02ed27ad5d4d5661fe02784f/8/web-gallery/static/js/libs2.js" type="text/javascript"></script>
-<script src="http://images.habbo.com/habboweb/61_c0f99b7b02ed27ad5d4d5661fe02784f/8/web-gallery/static/js/visual.js" type="text/javascript"></script>
-<script src="http://images.habbo.com/habboweb/61_c0f99b7b02ed27ad5d4d5661fe02784f/8/web-gallery/static/js/libs.js" type="text/javascript"></script>
-<script src="http://images.habbo.com/habboweb/61_c0f99b7b02ed27ad5d4d5661fe02784f/8/web-gallery/static/js/common.js" type="text/javascript"></script>
-<link rel="stylesheet" href="http://images.habbo.com/habboweb/61_c0f99b7b02ed27ad5d4d5661fe02784f/8/web-gallery/v2/styles/style.css" type="text/css" />
-<link rel="stylesheet" href="http://images.habbo.com/habboweb/61_c0f99b7b02ed27ad5d4d5661fe02784f/8/web-gallery/v2/styles/buttons.css" type="text/css" />
-<link rel="stylesheet" href="http://images.habbo.com/habboweb/61_c0f99b7b02ed27ad5d4d5661fe02784f/8/web-gallery/v2/styles/boxes.css" type="text/css" />
-<link rel="stylesheet" href="http://images.habbo.com/habboweb/61_c0f99b7b02ed27ad5d4d5661fe02784f/8/web-gallery/v2/styles/tooltips.css" type="text/css" />
-<link rel="stylesheet" href="http://images.habbo.com/habboweb/61_c0f99b7b02ed27ad5d4d5661fe02784f/8/web-gallery/v2/styles/changepassword.css" type="text/css" />
+<script src="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/68/web-gallery/static/js/libs2.js" type="text/javascript"></script>
+<script src="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/68/web-gallery/static/js/visual.js" type="text/javascript"></script>
+<script src="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/68/web-gallery/static/js/libs.js" type="text/javascript"></script>
+<script src="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/68/web-gallery/static/js/common.js" type="text/javascript"></script>
+<link rel="stylesheet" href="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/68/web-gallery/v2/styles/style.css" type="text/css" />
+<link rel="stylesheet" href="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/68/web-gallery/v2/styles/buttons.css" type="text/css" />
+<link rel="stylesheet" href="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/68/web-gallery/v2/styles/boxes.css" type="text/css" />
+<link rel="stylesheet" href="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/68/web-gallery/v2/styles/tooltips.css" type="text/css" />
+<link rel="stylesheet" href="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/68/web-gallery/v2/styles/changepassword.css" type="text/css" />
 
 <noscript> 
     <meta http-equiv="refresh" content="0;url=/client/nojs" />
 </noscript> 
 
-<link rel="stylesheet" href="http://images.habbo.com/habboweb/61_c0f99b7b02ed27ad5d4d5661fe02784f/8/web-gallery/v2/styles/habboclient.css" type="text/css" />
+<link rel="stylesheet" href="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/68/web-gallery/v2/styles/habboclient.css" type="text/css" />
 <link rel="stylesheet" href="/Public/Styles/Default/CSS/client.css" type="text/css" />
-<script src="http://images.habbo.com/habboweb/61_c0f99b7b02ed27ad5d4d5661fe02784f/8/web-gallery/static/js/habboflashclient.js" type="text/javascript"></script>
+<script src="http://images.habbo.com/habboweb/63_1dc60c6d6ea6e089c6893ab4e0541ee0/68/web-gallery/static/js/habboflashclient.js" type="text/javascript"></script>
 
 <cfoutput>
 <script type="text/javascript"> 
