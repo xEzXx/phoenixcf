@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50141
 File Encoding         : 65001
 
-Date: 2011-01-15 19:41:54
+Date: 2011-01-22 19:03:27
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -3085,13 +3085,14 @@ CREATE TABLE `cms_news` (
   `image` varchar(255) COLLATE latin1_general_ci DEFAULT '/Public/Images/news/TS_Web60.png',
   `campaign` int(1) NOT NULL DEFAULT '0',
   `campaignimg` varchar(255) COLLATE latin1_general_ci NOT NULL,
+  `author` int(6) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 -- ----------------------------
 -- Records of cms_news
 -- ----------------------------
-INSERT INTO cms_news VALUES ('1', 'Habboon Hotel', 'Welcome to the official test hotel to<br>Phoenix 3.0!<br><br>The hotel is due to open up on<br>Friday, 29th October', 'Well what have we here?', '0', '/Public/Images/news/TS_Web60.png', '0', '');
+INSERT INTO cms_news VALUES ('1', 'Habboon Hotel', 'Welcome to the official test hotel to<br>Phoenix 3.0!<br><br>The hotel is due to open up on<br>Friday, 29th October', 'Well what have we here?', '0', '/Public/Images/news/TS_Web60.png', '0', '', '1');
 
 -- ----------------------------
 -- Table structure for `cms_registration_figures`
@@ -7096,7 +7097,7 @@ CREATE TABLE `server_status` (
 -- ----------------------------
 -- Records of server_status
 -- ----------------------------
-INSERT INTO server_status VALUES ('1', '0', '0', 'Phoenix v3.0.0 (Build 13001)', '1295034575.22736', '0');
+INSERT INTO server_status VALUES ('1', '1', '0', 'Phoenix v3.0.0 (Build 13007)', '1295207171', '0');
 
 -- ----------------------------
 -- Table structure for `system_stats`
@@ -7113,7 +7114,7 @@ CREATE TABLE `system_stats` (
 -- ----------------------------
 -- Records of system_stats
 -- ----------------------------
-INSERT INTO system_stats VALUES ('1', '2011-01-14 20:51:56', '0', '0');
+INSERT INTO system_stats VALUES ('1', '2011-01-14 20:51:56', '1', '0');
 
 -- ----------------------------
 -- Table structure for `tele_links`
