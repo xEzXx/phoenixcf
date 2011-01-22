@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50141
 File Encoding         : 65001
 
-Date: 2011-01-22 20:58:14
+Date: 2011-01-22 22:00:52
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -3071,6 +3071,23 @@ INSERT INTO clothing VALUES ('212', '2010', '0');
 INSERT INTO clothing VALUES ('213', '2011', '0');
 INSERT INTO clothing VALUES ('214', '2012', '0');
 INSERT INTO clothing VALUES ('215', '2013', '0');
+
+-- ----------------------------
+-- Table structure for `cms_comments`
+-- ----------------------------
+DROP TABLE IF EXISTS `cms_comments`;
+CREATE TABLE `cms_comments` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `story` int(6) NOT NULL,
+  `comment` text NOT NULL,
+  `date` int(10) NOT NULL,
+  `author` int(6) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of cms_comments
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for `cms_news`
