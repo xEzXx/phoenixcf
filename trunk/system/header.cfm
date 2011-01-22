@@ -7,14 +7,14 @@
 		</div>
 		<div id="enter-hotel">
 			<div class="open">
-					<cfoutput><a href="/client/" target="ClientWndw" onclick="window.open('#cms_url#/client','ClientWndw','width=980,height=597');return false;">Enter Hotel<i></i></a></cfoutput>
+				<cfoutput><a href="/client/" target="ClientWndw" onclick="window.open('#cms_url#/client','ClientWndw','width=980,height=597');return false;">Enter Hotel<i></i></a></cfoutput>
 				<b></b>
 			</div>
 		</div>
 	</div>
 	
 	<cfset theroot = expandPath("/content/")>
-	<cfdirectory action="LIST" directory="#theroot#" name="dirlist">
+	<cfdirectory action="LIST" directory="#theroot#" name="dirlist" filter="*-*">
 	<cfoutput>
 		<div class="navBar">
 			<cfloop query="dirlist">
