@@ -109,12 +109,7 @@
     	params["wmode"] = "opaque";
     }
     
-    var clientUrl = "#cms_url#/client/r59/Habbo10.swf";
-    try {
-        if (swfobject.getFlashPlayerVersion().major <= 9) { 
-            clientUrl = "#cms_url#/client/r59/Habbo.swf"; 
-        }
-    } catch(e) {}
+    var clientUrl = "#cms_url#/client/r59/Habbo.swf";
 
     swfobject.embedSWF(clientUrl, "flash-container", "100%", "100%", "10.0.0", "http://images.habbo.com/habboweb/61_c0f99b7b02ed27ad5d4d5661fe02784f/8/web-gallery/flash/expressInstall.swf", flashvars, params);
  
