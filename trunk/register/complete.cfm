@@ -1,10 +1,11 @@
 <!-- Read config.ini settings & apply them -->
 <cfset iniFile = expandPath("../config.ini")>
 <cfset DSN = getProfileString(iniFile, "coldfusion", "DSN")>
-<cfset CurrentStyle = getProfileString(iniFile, "settings", "style")>
+<cfset Salt = getProfileString(iniFile, "settings", "salt")>
+<cfset Encryption = getProfileString(iniFile, "settings", "encryption")>
 <!-- Read config.ini settings & apply them -->
 
-<cfset password = #hash(form.password)#>
+<cfset password = #hash(form.password & salt, Encryption)#>
 <cfif not isdefined('session.account')>
 	<cfquery name = "MailCheck" datasource = "#DSN#">
 		SELECT mail
