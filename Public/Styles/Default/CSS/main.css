@@ -863,3 +863,14 @@ a.selected {
 .display_none {
 	display:none;
 }
+
+/* Voting Page --------------- */
+body.votepage {
+	background-image: url( '../Images/bg.gif' );
+}
+
+.votepage .contentBox {
+	width:330px;
+	padding:5px 5px 5px 5px;
+	text-align:center;
+}

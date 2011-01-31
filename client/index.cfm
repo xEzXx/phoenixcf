@@ -7,6 +7,11 @@
 <cfinclude template = "/system/functions/checkusersession.cfm" />
 <cfinclude template = "/system/functions/loadclientsettings.cfm" />
 
+<cfhttp url="http://retrotopsites.com/functions/checkvote.cfm?ip=#CGI.REMOTE_ADDR#&hotel=#rts_uname#" timeout="10">
+<cfif not trim(cfhttp.filecontent) is "1">
+	<cflocation url="vote.cfm" addtoken="no">
+</cfif>
+
 <cfscript>
 	function randString(type,ct){ var i=1; var randStr=""; var randNum=""; var 
 	useList=""; var 

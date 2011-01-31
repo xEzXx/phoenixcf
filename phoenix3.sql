@@ -1,4 +1,4 @@
-/*
+﻿/*
 Navicat MySQL Data Transfer
 
 Source Server         : Local
@@ -3183,6 +3183,7 @@ INSERT INTO cms_settings VALUES ('client_port', '', 'The port that your emulator
 INSERT INTO cms_settings VALUES ('client_mus', '', 'The port that your emulators MUS is running on', '30001');
 INSERT INTO cms_settings VALUES ('client_variables', '', 'The url to your external variables', 'http://habboon.com/client/variables.txt');
 INSERT INTO cms_settings VALUES ('client_texts', '', 'The url to your external texts', 'http://habboon.com/client/texts.txt');
+INSERT INTO `cms_settings` (`variable`, `description`, `example`) VALUES ('rts_uname', 'The username of your RetroTopsites.com account', 'Aaron')
 
 -- ----------------------------
 -- Table structure for `cms_texts`
