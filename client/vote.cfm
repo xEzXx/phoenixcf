@@ -7,6 +7,7 @@
 
 <cfinclude template = "/system/functions/checkusersession.cfm" />
 <cfinclude template = "/system/functions/loadsettings.cfm" />
+<cfinclude template = "/system/functions/loadclientsettings.cfm" />
 
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 <head> 
@@ -20,7 +21,7 @@
 	<div class="contentBox">
 		<div class="boxHeader">Vote for us</div>
 		Vote for us each day for your chance to win bonus credits!<br /><br />
-		<a href="http://retrotopsites.com/functions/in.cfm?user=Aaron" target="_blank" onclick="location.href='index.cfm'"><img src="http://retrotopsites.com/Images/vote.gif" alt="Vote For Us!" /></a>
+		<a href="http://retrotopsites.com/functions/in.cfm?user=#rts_uname#" target="_blank" onclick="location.href='index.cfm'"><img src="http://retrotopsites.com/Images/vote.gif" alt="Vote For Us!" /></a>
 	</div>
 
 </body>
