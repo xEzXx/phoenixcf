@@ -75,7 +75,7 @@
 
 <cfoutput>
 <script type="text/javascript"> 
-    FlashExternalInterface.loginLogEnabled = true;
+    FlashExternalInterface.loginLogEnabled = false;
     FlashExternalInterface.logLoginStep("web.view.start");
     
     if (top == self) {
@@ -95,7 +95,7 @@
             "external.texts.txt" : "#client_texts#", 
             "use.sso.ticket" : "1", 
             "sso.ticket" : "#ticket#", 
-            "processlog.enabled" : "1", 
+            "processlog.enabled" : "0", 
             "account_id" : "1", 
             "client.starting" : "Please wait! Habboon is starting up.", 
             "flash.client.url" : "#cms_url#/client/r59/", 
