@@ -98,7 +98,6 @@ MailisFree = 0;
 		<div class="boxHeader">Account Settings</div>
 		<div class="boxContent">
 			<a href="?page=general" <cfif url.page is "general">class="selected"</cfif>>General Settings</a><br/>
-			<a href="?page=forum" <cfif url.page is "forum">class="selected"</cfif>>Forum Settings</a><br/>
 			<a href="?page=email" <cfif url.page is "email">class="selected"</cfif>>Email settings</a><br/>
 			<a href="?page=password" <cfif url.page is "password">class="selected"</cfif>>Password settings</a>
 		</div>

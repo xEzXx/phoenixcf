@@ -447,7 +447,7 @@ p.Mainheadline > a {
 	color:#fff;
 }
 
-div.HeadlineStory> p.Mainstory {
+div.HeadlineStory> p {
 	padding:5px 5px 0 15px;
 	margin:0 0 0 0;
 	color:#fff;

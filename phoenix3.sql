@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50141
 File Encoding         : 65001
 
-Date: 2011-02-07 10:51:41
+Date: 2011-02-08 16:14:21
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -8159,4 +8159,23 @@ CREATE TABLE `user_wardrobe` (
 
 -- ----------------------------
 -- Records of user_wardrobe
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `wired_items`
+-- ----------------------------
+DROP TABLE IF EXISTS `wired_items`;
+CREATE TABLE `wired_items` (
+  `item_id` int(9) NOT NULL,
+  `extra1` text NOT NULL,
+  `extra2` text NOT NULL,
+  `extra3` text NOT NULL,
+  `extra4` text NOT NULL,
+  `extra5` text NOT NULL,
+  PRIMARY KEY (`item_id`),
+  UNIQUE KEY `item_id` (`item_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of wired_items
 -- ----------------------------
