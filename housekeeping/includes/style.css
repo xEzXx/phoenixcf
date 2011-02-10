@@ -294,14 +294,13 @@ div .SelectRow:hover {
                                       rgba(127, 127, 127, 0.2) 35%,
                                       rgba(0, 0, 0, 0.3));
   bottom: 0;
-  padding: 20px;
-  padding-bottom: 130px;
   position: fixed;
   right: 0;
   top: 0;
   z-index: 10;
+  padding:20px 0 20px 0;
   left:21%;
-  width:79%;
+  overflow:auto;
 }
 
 .overlay .page {
