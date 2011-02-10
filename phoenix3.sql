@@ -1,4 +1,4 @@
-/*
+﻿/*
 Navicat MySQL Data Transfer
 
 Source Server         : Local
@@ -8175,7 +8175,3 @@ CREATE TABLE `wired_items` (
   PRIMARY KEY (`item_id`),
   UNIQUE KEY `item_id` (`item_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
--- ----------------------------
--- Records of wired_items
--- ----------------------------
