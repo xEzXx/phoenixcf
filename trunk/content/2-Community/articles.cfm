@@ -16,7 +16,9 @@
 <cfoutput>
 	<script type="text/javascript"> 
 		function doPostComment() {
-			comment = $("##our_comment").val();
+			var comment = $("##our_comment").val();
+			comment = comment.replace('<','');
+			comment = comment.replace('>','');
 			story = $("##storyid").val();
 			uid = $("##uid").val();
 			
