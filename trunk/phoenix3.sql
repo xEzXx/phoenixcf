@@ -1,4 +1,4 @@
-﻿/*
+/*
 Navicat MySQL Data Transfer
 
 Source Server         : Local
@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50141
 File Encoding         : 65001
 
-Date: 2011-02-08 16:14:21
+Date: 2011-02-28 04:27:53
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -2729,6 +2729,7 @@ CREATE TABLE `catalog_marketplace_offers` (
   `timestamp` double NOT NULL,
   `state` enum('1','2') NOT NULL DEFAULT '1',
   `extra_data` text NOT NULL,
+  `furni_id` int(10) unsigned NOT NULL,
   PRIMARY KEY (`offer_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
@@ -6483,6 +6484,31 @@ INSERT INTO help_topics VALUES ('11', '3', 'Stacking-related issues', 'The stack
 INSERT INTO help_topics VALUES ('12', '1', 'Support Tickets & User Reports', 'We would just like to urge that the ticket system you will find in this help tool and when reporting users is only intended for SERIOUS requests. Yes, it works, and there is no need to test it. Any requests that are offensive, spam, or in anyway inappropriate may result in a ban.\r\n\r\nAlso, when submitting a help request, please keep in mind that it must be in English.', '2');
 
 -- ----------------------------
+-- Table structure for `items`
+-- ----------------------------
+DROP TABLE IF EXISTS `items`;
+CREATE TABLE `items` (
+  `id` int(10) unsigned NOT NULL,
+  `user_id` int(10) NOT NULL,
+  `room_id` int(10) unsigned NOT NULL DEFAULT '0',
+  `base_item` int(10) unsigned NOT NULL,
+  `extra_data` text NOT NULL,
+  `x` int(11) NOT NULL DEFAULT '0',
+  `y` int(11) NOT NULL DEFAULT '0',
+  `z` double NOT NULL DEFAULT '0',
+  `rot` int(11) NOT NULL DEFAULT '0',
+  `wall_pos` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`) USING BTREE,
+  KEY `userid` (`user_id`) USING BTREE,
+  KEY `roomid` (`room_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of items
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for `item_id_generator`
 -- ----------------------------
 DROP TABLE IF EXISTS `item_id_generator`;
@@ -6731,27 +6757,6 @@ CREATE TABLE `room_ads` (
 
 -- ----------------------------
 -- Records of room_ads
--- ----------------------------
-
--- ----------------------------
--- Table structure for `room_items`
--- ----------------------------
-DROP TABLE IF EXISTS `room_items`;
-CREATE TABLE `room_items` (
-  `id` int(10) unsigned NOT NULL,
-  `room_id` int(10) unsigned NOT NULL,
-  `base_item` int(10) unsigned NOT NULL,
-  `extra_data` text NOT NULL,
-  `x` int(11) NOT NULL,
-  `y` int(11) NOT NULL,
-  `z` double NOT NULL,
-  `rot` int(11) NOT NULL,
-  `wall_pos` varchar(100) NOT NULL,
-  KEY `id` (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
--- ----------------------------
--- Records of room_items
 -- ----------------------------
 
 -- ----------------------------
@@ -7819,13 +7824,15 @@ CREATE TABLE `server_settings` (
   `motd` text NOT NULL,
   `timer` int(11) NOT NULL DEFAULT '15',
   `pixels` int(11) NOT NULL DEFAULT '15',
-  `credits` int(11) NOT NULL DEFAULT '75'
+  `credits` int(11) NOT NULL DEFAULT '75',
+  `enable_chatlogs` enum('0','1') NOT NULL DEFAULT '1',
+  `enable_roomlogs` enum('0','1') NOT NULL DEFAULT '1'
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of server_settings
 -- ----------------------------
-INSERT INTO server_settings VALUES ('Please change your motd \\nYou can find this message in your server_settings table :)', '15', '15', '75');
+INSERT INTO server_settings VALUES ('Please change your motd \\nYou can find this message in your server_settings table :)', '15', '15', '75', '1', '1');
 
 -- ----------------------------
 -- Table structure for `server_status`
@@ -8015,22 +8022,6 @@ CREATE TABLE `user_info` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for `user_items`
--- ----------------------------
-DROP TABLE IF EXISTS `user_items`;
-CREATE TABLE `user_items` (
-  `id` int(10) unsigned NOT NULL,
-  `user_id` int(10) unsigned NOT NULL,
-  `base_item` int(10) unsigned NOT NULL,
-  `extra_data` text NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
--- ----------------------------
--- Records of user_items
--- ----------------------------
-
--- ----------------------------
 -- Table structure for `user_pets`
 -- ----------------------------
 DROP TABLE IF EXISTS `user_pets`;
@@ -8175,3 +8166,7 @@ CREATE TABLE `wired_items` (
   PRIMARY KEY (`item_id`),
   UNIQUE KEY `item_id` (`item_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of wired_items
+-- ----------------------------
